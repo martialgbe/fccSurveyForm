@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fccSurveyForm</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+      <h1 id="title">Free Code Camp Survey Form</h1>
+      
+      <p id="description">Thank you for taking your time to help us improve our plateform</p>
+      <form id="survey-form" >
+        <div>
+           <label id="name-label" for="name">Name</label>
+           <input
+               
+               id="name"
+               placeholder="Enter your name"
+               required
+        </div>
+        
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input
+                 type="email"
+                 id="email"
+                 placeholder="Enter your email"
+                 required
+            
+        </div>
+          
+        <div>
+          <label id="number-label" for="number"
+            >Age</label>
+          <input
+                 type="number"
+                 id="number"
+                 min="20"
+                 max="100"
+                 placeholder="Age"
+                 
+                 
+         </div>
+          
+          <div>
+            <p>Which option best describes your current role?</p>
+            
+            <select id="dropdown" name="role" 
+                    class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              
+              <option value="student">Student</option>
+              
+              <option value="job">Full Time Job</option>
+              
+            </select>
+          
+          </div>
+          
+          <div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            
+             <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+                 />Definitely</label>
+             <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+                 />Maybe</label>
+            <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+          </div>
+          
+          <div>
+            <p>
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+            
+             <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end Projects</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Back-end Projects</label
+        >
+           
+        </div>
+          
+        <div>
+          <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+          </div>
+          
+          <div>
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+       </div>
+            
+      </form>
+      
+    </div>
+  
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+  </body>
+  </html>
